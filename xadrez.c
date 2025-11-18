@@ -4,7 +4,7 @@ int main() {
 // Desafio de Xadrez
 // Movimentando as peças utilizando estruturas de repetição
     
-    int t = 0, b = 0;
+    int t = 0, b = 0, movimentoCavalo = 1;
 
     printf("*Movimento da Torre*\n\n");
 
@@ -30,6 +30,19 @@ int main() {
     //Mover a Rainha 8 casas para a esquerda
     for (int r = 0; r < 8; r++)
     {
+        printf("Esquerda\n"); //Imprime a direção do movimento
+    }
+
+    printf("\n*Movimento do Cavalo*\n\n");
+
+    //Mover o Cavalo 2 casas para baixo e 1 para a esquerda (Movimento em L)
+    //Utilizando loops aninhados
+    while (movimentoCavalo--)
+    {
+        for (int c = 0; c < 2; c++)
+        {
+            printf("Baixo\n"); //Imprime a direção do movimento
+        }
         printf("Esquerda\n"); //Imprime a direção do movimento
     }
 
